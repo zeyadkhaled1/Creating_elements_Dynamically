@@ -1,0 +1,64 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input,
+form select {
+    background-color: #FCFCFF;
+    border: 1px solid #DADAF1;
+    padding: 5px;
+    display: block;
+    width: 250px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #009086;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form input:focus-visible,
+form select:focus-visible {
+    outline: 1.4px solid black;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.results * {
+    background-color: #FC6218;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    width: 180px;
+    font-size: 13px;
+    margin: 20px;
+    animation: animation_child 1s linear;
+}
+
+@keyframes animation_child {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
